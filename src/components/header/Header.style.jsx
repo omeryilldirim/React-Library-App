@@ -8,7 +8,7 @@ export const HeaderContainer = styled(Flex)`
 
 export const HeaderTitle = styled.h2`
     margin-top: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: ${({theme})=> theme.colors.detailColor};
     
     @media (max-width: ${({theme})=> theme.screens.lg}) {
@@ -27,7 +27,7 @@ export const HeaderForm = styled.form`
   backdrop-filter: blur(8.3px);
   -webkit-backdrop-filter: blur(8.3px);
   border: 1px solid rgba(15, 63, 42, 0.3);
-  margin: 20px;
+  margin: 10px;
   @media (max-width: ${({theme})=> theme.screens.lg}) {
     flex-direction:column;
     padding:1rem;
@@ -84,7 +84,7 @@ export const HeaderButton = styled.button`
   margin: 1rem;
   border-radius: 3px;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   &:hover {

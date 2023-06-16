@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FormContainer,
   Header,
@@ -8,25 +8,39 @@ import {
   StyledInput,
 } from "./Login.style";
 import { useNavigate } from "react-router-dom";
+import users from "../../helper/users"
 
 const Login = ({ setCurrentUser }) => {
   const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setCurrentUser("anthony");
-    sessionStorage.setItem("user", "anthony");
-    navigate(-1);
+    for (let user of users) {
+      if (user.username === username && user.password === password) {
+        setCurrentUser(username);
+        sessionStorage.setItem("user", username);
+        navigate(-1);
+        return;
+      }
+    }
+    alert("Invalid username or password");
   };
 
   return (
     <LoginContainer>
       <FormContainer>
-        <Header>Login Here</Header>
+        <Header>Login</Header>
         <StyledForm onSubmit={handleSubmit}>
-          <StyledInput type="text" placeholder="Username" required />
-          <StyledInput type="password" placeholder="Password" required />
-          <StyledButton type="submit">Login</StyledButton>
+          <StyledInput
+            type="text"
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+          <StyledInput type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+          <StyledButton type="submit">Sign In</StyledButton>
         </StyledForm>
       </FormContainer>
     </LoginContainer>

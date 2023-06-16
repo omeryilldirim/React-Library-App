@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import {
   DetailContainer,
   DetailImg,
@@ -12,8 +12,7 @@ import defaultImg from "../../assets/book.jpg";
 
 const Detail = () => {
   const { state } = useLocation();
-  const { id } = useParams();
-  console.log(state,id);
+  // const { id } = useParams();
 
   //! id ye göre veri çekme
   // const [detailData,setDetailData] = useState();

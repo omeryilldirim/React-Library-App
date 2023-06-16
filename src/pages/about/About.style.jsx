@@ -5,6 +5,7 @@ export const AboutContainer = styled(Flex)`
     flex-direction:column;
     line-height:2;
     text-align:center;
+    min-height: calc(100vh - 106px);
 `
 export const ProfileImg = styled.img`
   margin: 2rem 0;
@@ -17,7 +18,7 @@ export const InfoContainer = styled.div`
   margin: 0 2rem 1rem;
   width: 60%;
   border: 1px solid white;
-  padding: 5rem;
+  padding: 3rem;
   background: ${({ theme }) => theme.colors.detailBgColor};
     color: ${({ theme }) => theme.colors.detailColor};
   border-radius: 16px;

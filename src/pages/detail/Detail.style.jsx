@@ -4,6 +4,7 @@ import Flex from '../../styles/Flex';
 export const DetailContainer = styled(Flex)`
    flex-direction:column;
    padding: 1rem; 
+   min-height: calc(100vh - 106px);
 `
 
 export const DetailPart = styled(Flex)`

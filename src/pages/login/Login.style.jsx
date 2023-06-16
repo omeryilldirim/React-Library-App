@@ -41,8 +41,8 @@ export const Header = styled.h1`
   width: 100%;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  transform: translate(0.1em, 0.1em);
-  background-image: linear-gradient(305deg, darkblue, yellow, darkblue);
+
+  background-image: linear-gradient(305deg, #026e42, yellow, #027528);
   -webkit-background-clip: text;
   background-clip: text;
 `;
@@ -69,7 +69,7 @@ export const StyledInput = styled.input`
 
 export const StyledButton = styled.button`
   margin-top: 50px;
-  background-color: ${({ theme }) => theme.colors.navbarBgColor};
+  background-color: ${({ theme }) => theme.colors.logoBackground};
   color: ${({ theme }) => theme.colors.logoColor};
   padding: 15px 0;
   opacity: 0.5;

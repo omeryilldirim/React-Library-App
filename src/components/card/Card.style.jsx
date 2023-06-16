@@ -42,6 +42,6 @@ export const CardButton = styled.button`
   &:hover {
     opacity: 0.6;
   }
-  background: ${({theme})=> theme.colors.mainColor};
+  background: ${({theme})=> theme.colors.linkColor};
   color: ${({theme})=> theme.colors.linkHoverColor};
 `;

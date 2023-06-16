@@ -12,7 +12,7 @@ const Icon = ({path,icon, hoverColor}) => {
       className={`bi bi-${icon}`}
       viewBox="0 0 16 16"
       >
-      <path d={path} />
+      <path d={path}/>
     </SvgIcon>
   );
 }

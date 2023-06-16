@@ -9,7 +9,7 @@ import PrivateRouter from "./PrivateRouter";
 import Detail from "../pages/detail/Detail";
 import About from "../pages/about/About";
 
-const AppRouter = () => {
+const AppRouter = ({myTheme, setMyTheme}) => {
   const [currentUser, setCurrentUser] = useState(
     sessionStorage.getItem("user")
   );
@@ -23,20 +23,13 @@ const AppRouter = () => {
           path="/login"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
-        <Route path="/register" element={<Register />} />
-        {/* <Route path="/about" element={<PrivateRouter />}>
-          <Route path="" element={<About />} />
-        </Route>
-        <Route path="/detail" element={<PrivateRouter />}>
-          <Route path="" element={<Detail />} />
-        </Route> */}
-
+        <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
-      <Footer />
+      <Footer myTheme={myTheme} setMyTheme={setMyTheme}/>
     </BrowserRouter>
   );
 };

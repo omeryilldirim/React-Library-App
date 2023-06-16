@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Card = ({item}) => {
   const navigate = useNavigate()
-  console.log(item);
+  
   return (
     <CardContainer>
       <CardHeader>{item.volumeInfo.title}</CardHeader>
