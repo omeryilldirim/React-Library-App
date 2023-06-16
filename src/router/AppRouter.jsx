@@ -23,9 +23,9 @@ const AppRouter = ({myTheme, setMyTheme}) => {
           path="/login"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
+        <Route path="/about" element={<About />} />
         <Route path="/register" element={<Register setCurrentUser={setCurrentUser} />} />
         <Route element={<PrivateRouter />}>
-          <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
