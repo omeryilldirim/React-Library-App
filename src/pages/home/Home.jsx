@@ -15,6 +15,7 @@ const Home = () => {
 
   const getData = async () => {
     try {
+      console.log(APP_KEY)
       const {data} = await axios(url)
       setMyData(data.items)
     } catch (error) {

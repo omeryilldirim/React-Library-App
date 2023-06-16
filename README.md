@@ -1,24 +1,17 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
-
-# Project : Clarus Library
+# Project : React Library App
 
 ## Description
 
-Project aims to create a Clarus Library.
-
-## Problem Statement
-
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
+Built a library app with React and Styled-Components you can search through the Google Books API and you can change the theme of the app.You need to login to see the details of the book.
 
 ## Project Skeleton
 
 ```
-007 - Clarus Library (folder)
+React Library App (folder)
 |
-|----readme.md         # Given to the students (Definition of the project)
-SOLUTION
+|---readme.md
 ├── public
+│     ├── favicon.ico
 │     └── index.html
 ├── src
 │    ├── App.js
@@ -44,8 +37,8 @@ SOLUTION
 │    │       ├── Navbar.jsx
 │    │       └── Navbar.style.jsx
 │    ├── helper
+│    │   ├── users.js
 │    │   └── iconData.js
-│    ├── index.css
 │    ├── index.js
 │    ├── pages
 │    │   ├── about
@@ -76,58 +69,10 @@ SOLUTION
 
 ## Expected Outcome
 
-![Clarus Library](clarus-library.gif)
+![Library App](library-app.gif)
 
-## Objective
+### Following topics are to be covered;
 
-Build a Clarus Library using ReactJS.
-
-### At the end of the project, following topics are to be covered;
-
-- HTML
-
-- CSS
-
-- JS
-
-- ReactJS
-
-### At the end of the project, students will be able to;
-
-- improve coding skills within HTML & CSS & JS & ReactJS.
-
-- use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## Steps to Solution
-
-- Step 1: Create React App using `yarn create react-app clarus-library`or `npx create-react-app clarus-library`
-
-- Step 2: Go to `https://developers.google.com/books/docs/v1/using?hl=tr` and get api key.
-
-- Step 3 : Using api key and `axios` for getting data from `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${printType}&key=${APP_KEY}`.
-
-- Step 4: You are expected to code your project with **styled component**
-
-- Step 5 : You can get random login background image from `https://picsum.photos/1600/900`
-
-- Step 6: Add project gif to your project and README.md file.
-
-## Notes
-
-- You can add additional functionalities to your app.
-
-## Demo
-  <a href="https://clarus-library.vercel.app/" target="_blank">Clarus Library</a>
-
-## Google Books API
-
-<a href="https://developers.google.com/books/docs/v1/using" target="_blank">Google Books API</a>
-
-
-## How can we create an apikey for the Google Books API ? Watch the video!
-<a href="https://www.youtube.com/watch?v=lg6yA8oSW3s" target="_blank">
-Watch the video
-</a>
-
+- HTML, CSS, JS, ReactJS, React Router, Styled-Components, Google Books API
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
