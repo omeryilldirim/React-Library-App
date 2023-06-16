@@ -68,7 +68,7 @@ export const StyledInput = styled.input`
 
 export const StyledButton = styled.button`
   margin-top: 50px;
-  background-color: ${({ theme }) => theme.colors.navbarBgColor};
+  background-color: ${({ theme }) => theme.colors.logoBackground};
   color: ${({ theme }) => theme.colors.logoColor};
   padding: 15px 0;
   opacity: 0.5;
