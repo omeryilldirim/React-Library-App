@@ -1,8 +1,12 @@
-# Project : React Library App
+# React Library App
 
 ## Description
 
 Built a library app with React and Styled-Components you can search through the Google Books API and you can change the theme of the app.You need to login to see the details of the book.
+
+### Following topics are to be covered;
+
+- HTML, CSS, JS, ReactJS, React Router, Styled-Components, Google Books API
 
 ## Project Skeleton
 
@@ -70,9 +74,5 @@ React Library App (folder)
 ## Expected Outcome
 
 ![Library App](library-app.gif)
-
-### Following topics are to be covered;
-
-- HTML, CSS, JS, ReactJS, React Router, Styled-Components, Google Books API
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**

@@ -11,7 +11,7 @@ const Home = () => {
   const [selectType, setSelectType] = useState("all")
   const [myData, setMyData] = useState([])
   const APP_KEY = process.env.REACT_APP_apiKey
-  const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${selectType}&key=${APP_KEY}`
+  const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&printType=${selectType}&maxResults=40&key=${APP_KEY}`
 
   const getData = async () => {
     try {
