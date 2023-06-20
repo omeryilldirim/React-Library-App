@@ -13,6 +13,10 @@ password: 123456
 
 - HTML, CSS, JS, ReactJS, React Router, Styled-Components, Google Books API
 
+## Expected Outcome
+
+![Library App](library-app.gif)
+
 ## Project Skeleton
 
 ```
@@ -75,9 +79,5 @@ React Library App (folder)
 ├── package.json
 └── yarn.lock
 ```
-
-## Expected Outcome
-
-![Library App](library-app.gif)
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
